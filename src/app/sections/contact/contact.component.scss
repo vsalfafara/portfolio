@@ -1,0 +1,66 @@
+$primary: #5B86E5;
+$secondary: #36D1DC;
+$light: #F7FFF7;
+$dark: #2F3061;
+$jet: #343434;
+
+.contact {
+   background-color: $dark;
+   padding-bottom: 7em;
+
+   header {
+      margin-top: 0;
+
+      h1 {
+         color: $light;
+      }
+   }
+
+   p {
+      color: $light;
+      text-align: center;
+   }
+
+   form {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      max-width: 40em;
+      height: 20em;
+
+      input,
+      textarea {
+         box-sizing: border-box;
+         margin: .2em 0;
+         padding: .8em 1em;
+         width: 100%;
+         border: none;
+         outline: none;
+         background-color: rgb(37, 37, 75);
+         caret-color: $secondary;
+         color: $light;
+      }
+
+      textarea {
+         height: 10em;
+         width: 100%;
+         resize: none;
+      }
+
+      button {
+         display: block;
+         margin-left: auto;
+         background-color: $dark;
+         border: 2px solid $light;
+         color: $light;
+
+         &:hover {
+            background-color: $primary;
+            border: 2px solid $primary;
+         }
+      }
+   }
+}

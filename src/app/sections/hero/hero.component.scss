@@ -1,0 +1,183 @@
+$primary: #5B86E5;
+$secondary: #36D1DC;
+$light: #F7FFF7;
+$dark: #2F3061;
+$jet: #343434;
+
+main {
+   height: 100%;
+   overflow: hidden;
+
+   .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      text-align: center;
+      background-image: url('../../../assets/images/Path\ 8.svg');
+      background-repeat: no-repeat;
+      background-position: 100% 0;
+      height: 100%;
+
+      .hero {
+         * {
+            margin: 20px 0;
+         }
+
+         p {
+            font-size: 2rem;
+         }
+
+         h1 {
+            text-transform: uppercase;
+            letter-spacing: .3rem;
+            font-size: 5rem;
+
+            >span {
+               font-size: .5em;
+            }
+         }
+
+         a {
+            margin-top: 1em;
+            font-size: 1.3em;
+            font-weight: bolder;
+            letter-spacing: 2px;
+            padding: .7em 1.3em;
+            i {
+               font-size: 1.5rem;
+            }
+
+            &:hover {
+            background-color: $secondary;
+            color: $light;
+               >i {
+                  transform: rotate(90deg);
+               }
+            }
+         }
+      }
+
+      .hero-image {
+         height: 250px;
+         margin-top: 1.5em;
+         animation: hover 5s infinite;
+
+         img {
+            height: 100%;
+            box-shadow: 0 3rem 2rem -2.5rem black;
+         }
+      }
+   }
+}
+
+@keyframes hover {
+   0% {
+      transform: translateY(0);
+   }
+
+   50% {
+      transform: translateY(10%);
+   }
+
+   100% {
+      transform: translateY(0);
+   }
+}
+
+
+@media screen and (min-width: 768px) {
+   main {
+      background-size: cover !important;
+
+      .hero {
+         h1 {
+            font-size: 6rem;
+         }
+
+         p {
+            font-size: 1.5rem;
+         }
+      }
+   }
+}
+
+@media screen and (min-width: 1024px) {
+   main {
+      .box {
+         position: absolute;
+         border-radius: 1.5rem;
+         opacity: 0.6;
+         z-index: 2;
+
+         &:nth-child(1) {
+            top: 1rem;
+            left: 7rem;
+            width: 200px;
+            height: 200px;
+            background-image: linear-gradient(to bottom left, $primary, $secondary);
+            animation: hover 5s infinite ease;
+         }
+
+         &:nth-child(2) {
+            bottom: 5rem;
+            left: 2rem;
+            width: 150px;
+            height: 150px;
+            background-image: linear-gradient(to bottom left, $secondary, $light);
+            animation: hover 3s infinite ease;
+         }
+
+         &:nth-child(3) {
+            top: 5rem;
+            left: 40rem;
+            width: 125px;
+            height: 125px;
+            background-image: linear-gradient(to bottom left, $light, $primary);
+            animation: hover 7s infinite ease;
+         }
+
+         &:nth-child(4) {
+            bottom: 2rem;
+            left: 50rem;
+            width: 175px;
+            height: 175px;
+            background-image: linear-gradient(to bottom left, $primary, $light);
+            animation: hover 6s infinite ease;
+         }
+
+         &:nth-child(5) {
+            bottom: 6rem;
+            left: 25rem;
+            width: 100px;
+            height: 100px;
+            background-image: linear-gradient(to bottom left, $secondary, $primary);
+            animation: hover 4s infinite ease;
+         }
+      }
+
+      .container {
+         display: flex;
+         flex-direction: row !important;
+         justify-content: space-around;
+         align-items: center;
+         width: 100%;
+         padding: 0 .5em;
+
+         .hero {
+            h1 {
+               font-size: 7rem;
+            }
+
+            p {
+               font-size: 2rem;
+            }
+         }
+
+         .hero-image {
+            transform: scale(1.3);
+         }
+      }
+   }
+}

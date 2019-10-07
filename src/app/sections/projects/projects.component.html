@@ -1,0 +1,24 @@
+<section class="projects" id="projects">
+   <div class="container">
+      <header>
+         <h1>Projects</h1>
+         <div class="hr"></div>
+      </header>
+      <div class="content">
+         <div class="row" *ngFor="let row of projects">
+            <div class="project" *ngFor="let col of row">
+               <div class="img">
+                  <img src="{{col.fields.image.fields.file.url}}">
+               </div>
+               <div class="details">
+                  <h2>{{col.fields.title}}</h2>
+                  <p>{{col.fields.subtitle}}</p>
+                  <button class="btn" (click)="openModal(col.fields.title)">Read More</button>
+                  <app-modal [project]="col.fields.project" id="{{col.fields.title}}">
+                  </app-modal>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>

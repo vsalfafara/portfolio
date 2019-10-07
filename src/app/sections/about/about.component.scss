@@ -1,0 +1,106 @@
+$primary: #5B86E5;
+$secondary: #36D1DC;
+$light: #F7FFF7;
+$dark: #2F3061;
+$jet: #343434;
+
+.about {
+   z-index: -1;
+   top: -50px;
+   &.nav-sticked {
+      top: 0 !important;
+   }
+
+   .profile-img {
+      height: 20em;
+      min-width: 20em;
+      width: 20em;
+      clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+      background-image: url('../../../assets/images/profile.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+   }
+
+   .details {
+      margin-top: 1em;
+
+      p {
+         line-height: 1.5em;
+         margin: .2em 0;
+         color: rgba(0, 0, 0, 0.8);
+      }
+
+      span:not(.strike) {
+         color: $secondary;
+         font-weight: bold;
+      }
+   }
+
+   .techs {
+      width: 100%;
+
+      .tech-content {
+         .row {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+
+
+            .col {
+               display: flex;
+               flex-direction: column;
+               width: 100%;
+
+               .tech {
+                  position: relative;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  white-space: nowrap;
+                  width: 1em;
+                  height: 1em;
+                  padding: 3em;
+                  margin: 1em auto;
+                  font-size: 1rem;
+                  background-color: $jet;
+                  color: $light;
+                  clip-path: circle(45.4% at 50% 50%);
+               }
+
+               p {
+                  box-sizing: border-box;
+                  padding: 0 1em;
+                  line-height: 1.5em;
+                  width: 100%;
+               }
+            }
+         }
+      }
+   }
+}
+
+@media screen and (min-width: 640px) {
+   .about {
+      .row {
+         flex-direction: row !important;
+      }
+   }
+}
+@media screen and (min-width: 1024px) {
+   .about {
+      .content {
+         flex-direction: row;
+         align-items: stretch;
+
+         >div {
+            width: 50%;
+            margin: 0;
+         }
+
+         .profile-img {
+            margin: auto;
+         }
+      }
+   }
+}

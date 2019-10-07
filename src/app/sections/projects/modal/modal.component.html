@@ -1,0 +1,37 @@
+<div class="modal">
+   <div class="container">
+      <div class="carousel">
+         <mat-carousel
+         timings="500ms ease-in-out"
+         [autoplay]="true"
+         interval="5000"
+         color="none"
+         maxWidth="auto"
+         proportion="50"
+         slides="5"
+         [loop]="true"
+         [hideIndicators]="false"
+         [useKeyboard]="true"
+         [useMouseWheel]="false"
+         orientation="ltr">
+            <mat-carousel-slide
+            #matCarouselSlide
+               *ngFor="let image of project.fields.images; let i = index"
+               [image]="image.fields.file.url"
+               [hideOverlay]="true">
+            </mat-carousel-slide>
+         </mat-carousel>
+      </div>
+      <div class="container">
+         <h1>{{project.fields.title}}</h1>
+         <p class="sub">{{project.fields.subtitle}}</p>
+         <div class="tech">
+            <span *ngFor="let tech of project.fields.technologyStack" class="{{ tech | lowercase }}">{{tech}}</span>
+         </div>
+         <p class="description">{{project.fields.description}}</p>
+         <a *ngIf="project.fields.site" href="{{project.fields.site}}" target="_blank" class="btn">Visit Site <i
+               class="fas fa-external-link-alt"></i></a>
+         <button class="btn close" (click)="close()"><i class="fas fa-times"></i></button>
+      </div>
+   </div>
+</div>

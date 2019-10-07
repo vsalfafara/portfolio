@@ -1,0 +1,94 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('./assets/normalize.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+$primary: #5B86E5;
+$secondary: #36D1DC;
+$light: #F7FFF7;
+$dark: #2F3061;
+$jet: #343434;
+
+html,
+body {
+   height: 100%;
+}
+
+body {
+   font-size: 16px;
+   font-family: 'Montserrat', sans-serif;
+   overflow-x: hidden;
+}
+
+.container {
+   padding: 0 1.5em;
+}
+
+.btn {
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   border: 2px solid $secondary;
+   text-transform: uppercase;
+   cursor: pointer;
+   text-decoration: none;
+   margin: .5em 0;
+   padding: .5em 1em;
+   transition: .2s;
+   background-color: #FFF;
+   color: $secondary;
+
+   i {
+      margin: 0 0 0 10px !important;
+      transition: transform .2s;
+      font-size: 1.5rem;
+   }
+}
+
+.strike {
+   text-decoration: line-through;
+   font-style: italic;
+   font-size: .7rem;
+}
+
+main,
+section {
+   position: relative;
+   overflow: hidden;
+}
+
+.content {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   >div {
+      margin: 2em 0;
+      text-align: center;
+   }
+}
+
+
+section {
+   padding-bottom: 4em;
+
+   header {
+      margin: 3em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h1 {
+         text-transform: uppercase;
+         text-align: center;
+         letter-spacing: .3em;
+      }
+
+      .hr {
+         height: 4px;
+         width: 4em;
+         background: $secondary;
+      }
+   }
+}
+
