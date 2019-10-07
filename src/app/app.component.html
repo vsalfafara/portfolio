@@ -13,9 +13,9 @@
       </div>
       <nav [class.reveal-nav]="toggle">
          <ul>
-            <li><a pageScroll [pageScrollEasing]="easing" href="#about">About</a></li>
-            <li><a pageScroll [pageScrollEasing]="easing" href="#projects">Projects</a></li>
-            <li><a pageScroll [pageScrollEasing]="easing" href="#contact">Contact</a></li>
+            <li><a pageScroll [pageScrollEasing]="easing" [pageScrollInterruptible]="false" href="#about">About</a></li>
+            <li><a pageScroll [pageScrollEasing]="easing" [pageScrollInterruptible]="false" href="#projects">Projects</a></li>
+            <li><a pageScroll [pageScrollEasing]="easing" [pageScrollInterruptible]="false" href="#contact">Contact</a></li>
          </ul>
       </nav>
    </div>
