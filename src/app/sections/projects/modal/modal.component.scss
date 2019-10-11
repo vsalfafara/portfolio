@@ -28,7 +28,7 @@ $jet: #343434;
       transform: scale(.7);
       transition: .2s ease-in-out;
       opacity: 0;
-      width: 40em;
+      max-width: 40em;
       box-shadow: 0 1em 3em rgba(0, 0, 0, 0.5);
 
       .container {
