@@ -1,0 +1,47 @@
+@import './normalize.scss';
+@import './variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700;800&family=Montserrat:wght@700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  background-color: $dark;
+}
+
+section {
+  padding: 2rem 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  color: $semi-blue;
+  &.light {
+    color: $light
+  }
+}
+
+p {
+  font-family: 'Karla', sans-serif;
+  color: $light;
+  line-height: 2rem;
+  font-weight: 400;
+  &.blue {
+    color: $semi-blue;
+  }
+}
+
+.container {
+  padding: 0 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+button {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}

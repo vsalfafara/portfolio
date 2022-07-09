@@ -1,0 +1,90 @@
+footer {
+  background-color: $semi-dark;
+  padding: 3rem 0;
+  .flex {
+    display: flex;
+    padding: 1rem 0;
+    .link-flex {
+      margin-right: 3rem;
+    }
+    .logo {
+      width: 30px;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+    a {
+      text-decoration: none;
+      color: $light;
+      font-weight: bold;
+    }
+    span {
+      color: $light;
+      &.mobile-icon {
+        display: inline-block;
+        background: $light;
+        mask: url('../images/Mobile\ Icon.svg');
+        mask-size: cover;
+        height: 36px;
+        width: 20px;
+        margin-right: 2rem;
+      }
+      &.email-icon {
+        display: inline-block;
+        background: $light;
+        mask: url('../images/Email\ Icon.svg');
+        mask-size: cover;
+        height: 35px;
+        width: 36px;
+      }
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 3rem 0;
+      li {
+        margin: .5rem 0;
+      }
+    }
+    .contacts {
+      display: flex;
+      flex-wrap: wrap;
+      .contact {
+        flex: 1 1 0px;
+        border: 1px solid $light;
+        border-radius: 5px;
+        padding: .8rem 1rem;
+        min-width: 250px;
+        display: flex;
+        align-items: center;
+        margin: .5rem;
+        img {
+          height: 35px;
+          width: auto;
+        }
+        &.link {
+          border-color: $blue;
+        }
+        img, .img {
+          margin: 0 1rem;
+        }
+        .mobile-icon {
+          margin: 0 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    .link-flex {
+      display: flex;
+      > * {
+        padding: 1rem;
+      }
+      .links img, .address h3 {
+        margin-bottom: 3rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+.projects .container {
+  max-width: 1400px;
+  
+  .button-group {
+    display: flex;
+    margin: 3rem 0;
+    button {
+      color: $blue;
+      border-bottom: 3px solid rgb(58, 58, 58);
+      font-size: .9rem;
+      margin-right: 1rem;
+      padding-bottom: .5rem;
+      padding-right: 1rem;
+      padding-left: 1rem;
+      &.active {
+        padding-right: 0;
+        padding-left: 0;
+        border-bottom-color: $blue;
+      }
+    }
+  }
+
+  .carousel-root {
+    padding: .5rem;
+    margin-bottom: 3rem;
+    border: 1px solid $light;
+  }
+
+  .subtitle {
+    margin-bottom: 0;
+    font-style: italic;
+    line-height: .5rem;
+    &.role {
+      margin-bottom: 2rem;
+    }
+  }
+  .tags {
+    display: flex;
+    span {
+      padding: .5rem 1rem;
+      min-width: 100px;
+      margin-right: 1rem;
+      border: 1px solid $light;
+      border-radius: 5px;
+      text-align: center;
+      color: $light;
+      font-size: .8rem;
+      background-color: rgb(34, 34, 34);
+    }
+  }
+}
+@media screen and (min-width: 1079px) {
+  .projects {
+    .container {
+      .button-group {
+        button {
+          color: $light;
+          border-bottom-color: $dark;
+          padding-right: 0;
+          padding-left: 0;
+          &.active {
+            color: $blue;
+            border-bottom-color: $blue;
+          }
+        }
+      }
+      .project {
+        display: flex;
+        .description {
+          padding: 0 2rem;
+        }
+      }
+    }
+  }
+}
