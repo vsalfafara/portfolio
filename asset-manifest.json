@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.1ff30acd.css",
+    "main.js": "/portfolio/static/js/main.661f7ed3.js",
+    "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/1 Home.png": "/portfolio/static/media/1 Home.ed07a380dc953479adb5.png",
+    "static/media/3 Prenup.png": "/portfolio/static/media/3 Prenup.0a463fb227a5611ee298.png",
+    "static/media/4 Entourage.png": "/portfolio/static/media/4 Entourage.f422bb61ec8f4ea020bd.png",
+    "static/media/3 Graphics.png": "/portfolio/static/media/3 Graphics.590637a9cecf28bd7653.png",
+    "static/media/2 News and Articles.png": "/portfolio/static/media/2 News and Articles.c460878d5f3e88e5a54c.png",
+    "static/media/3 Products and Services.png": "/portfolio/static/media/3 Products and Services.e78fb4c4c1f7a6fe9342.png",
+    "static/media/2 News.png": "/portfolio/static/media/2 News.a9afcfb94e9b92808756.png",
+    "static/media/1.PNG": "/portfolio/static/media/1.809ac9d55cd8e507c8c3.PNG",
+    "static/media/3D Man Sitting.png": "/portfolio/static/media/3D Man Sitting.ad4e7952fed03bf837a0.png",
+    "static/media/5 Footer.png": "/portfolio/static/media/5 Footer.07885a3a27c7032c6fb7.png",
+    "static/media/4 Feedbacks.png": "/portfolio/static/media/4 Feedbacks.cad5befbda74d09aef51.png",
+    "static/media/3.PNG": "/portfolio/static/media/3.97208c2337ff134d9bca.PNG",
+    "static/media/4 Filter.png": "/portfolio/static/media/4 Filter.8768e0efdb9b455483bf.png",
+    "static/media/3D Man Standing.png": "/portfolio/static/media/3D Man Standing.1eb4fe554700a197d1c4.png",
+    "static/media/2 Groom and Bride.png": "/portfolio/static/media/2 Groom and Bride.1175bc0a69c8273bc344.png",
+    "static/media/5 FAQs.png": "/portfolio/static/media/5 FAQs.68623a06384be5a48e25.png",
+    "static/media/Von Alfafara - CV.pdf": "/portfolio/static/media/Von Alfafara - CV.27dc45304d23569ef624.pdf",
+    "static/media/5 Suppliers.png": "/portfolio/static/media/5 Suppliers.471065e297d514ffd554.png",
+    "static/media/2.PNG": "/portfolio/static/media/2.6f0ccea2f90f76dc2690.PNG",
+    "static/media/Computer Icon.svg": "/portfolio/static/media/Computer Icon.a291f0f4a8111a8e7cd4.svg",
+    "static/media/Mobile Icon.svg": "/portfolio/static/media/Mobile Icon.1da760afe4de5c9bc0a3.svg",
+    "static/media/Email Icon.svg": "/portfolio/static/media/Email Icon.e477923e9cd12ba3dae0.svg",
+    "static/media/LinkedIn Icon.svg": "/portfolio/static/media/LinkedIn Icon.c7a037da061097d01833a44ba1e8e46c.svg",
+    "static/media/Facebook Icon.svg": "/portfolio/static/media/Facebook Icon.fffd19854ad02b5c3d1623121cd99630.svg",
+    "index.html": "/portfolio/index.html",
+    "main.1ff30acd.css.map": "/portfolio/static/css/main.1ff30acd.css.map",
+    "main.661f7ed3.js.map": "/portfolio/static/js/main.661f7ed3.js.map",
+    "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1ff30acd.css",
+    "static/js/main.661f7ed3.js"
+  ]
+}
